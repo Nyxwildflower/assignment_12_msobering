@@ -6,8 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>Hehe Spinning Icon</p>
-        <Button label="Test"/>;
+        <Button onClick={() => {console.log("Button Pressed")}} label="Click Me"/>
       </header>
     </div>
   );
