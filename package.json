@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "import": "^0.0.6",
     "react-scripts": "5.0.1",
+    "styled-components": "^6.1.11",
     "web-vitals": "^2.1.4",
     "yarn": "^1.22.22"
   },
@@ -78,5 +79,8 @@
   "files": [
     "dist"
   ],
+  "resolutions": {
+    "styled-components": "^5"
+  },
   "types": "dist/index.d.ts"
 }
