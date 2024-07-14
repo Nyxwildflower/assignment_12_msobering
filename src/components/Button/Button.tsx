@@ -11,17 +11,32 @@ https://visme.co/blog/website-color-schemes/
 D3D9D4
 */
 
-const StyledButton = styled.button`
-  border: 2px solid #212A31;
+const StyledButton = styled.button<{ $backgroundColor?: string }>`
+  border: none;
   border-radius: 25px;
+  ${(props) => {
+    switch (props.disabled) {
+      case true:
+        return `
+          background-color: #999;
+        `;
+      default:
+        return `
+          background-color: ${props.$backgroundColor};
+          &:hover {
+            opacity: 0.5;
+            cursor: pointer;
+          }
+        `;
+    }
+  }}
   padding: 1em;
-  background-color: #212A31;
   font-size: 1em;
   color: #D3D9D4;
 `;
 
 const Button = (props: ButtonProps) => {
-  return <StyledButton onClick={props.onClick}>{props.label}</StyledButton>;
+  return <StyledButton style={{background: props.backgroundColor}} disabled={props.disabled} onClick={props.onClick}>{props.label}</StyledButton>;
 };
 
 export default Button;
