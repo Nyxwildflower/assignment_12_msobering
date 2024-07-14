@@ -13,7 +13,18 @@ type Story = StoryObj<typeof Button>;
 
 export const Default: Story = {
   args: {
-    label: "Press Button",
     onClick: fn(),
+    disabled: false,
+    label: "Press Button",
+    backgroundColor: "#212A31",
   },
 };
+
+export const Disabled: Story = {
+  args: {
+    onClick: undefined,
+    disabled: true,
+    label: "Don't Click",
+    backgroundColor: "#999",
+  }
+}
