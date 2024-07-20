@@ -3,4 +3,5 @@ export default interface ButtonProps {
   disabled?: boolean;
   backgroundColor?: string;
   label: string;
+  size?: string;
 }

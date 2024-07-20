@@ -17,6 +17,7 @@ export const Default: Story = {
     disabled: false,
     label: "Press Button",
     backgroundColor: "#212A31",
+    size: "15%",
   },
 };
 
@@ -26,5 +27,6 @@ export const Disabled: Story = {
     disabled: true,
     label: "Don't Click",
     backgroundColor: "#999",
+    size: "15%",
   }
 }
