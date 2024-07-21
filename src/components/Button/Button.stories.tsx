@@ -1,13 +1,13 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { fn } from '@storybook/test';
+import type { Meta, StoryObj } from "@storybook/react";
+import { fn } from "@storybook/test";
 
-import Button from './Button';
+import Button from "./Button";
 
 const meta: Meta<typeof Button> = {
   component: Button,
 };
 
-export default meta
+export default meta;
 
 type Story = StoryObj<typeof Button>;
 
@@ -28,5 +28,5 @@ export const Disabled: Story = {
     label: "Don't Click",
     backgroundColor: "#999",
     size: "15%",
-  }
-}
+  },
+};
