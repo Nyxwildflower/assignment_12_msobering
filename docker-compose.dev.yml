@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   app:
-    container_name: sobering_madison_coding_assignment12
+    container_name: sobering_madison_coding_assignment13
     image: app-dev
     build:
       context: .
@@ -12,4 +12,4 @@ services:
     environment:
       - WATCHPACK_POLLING=true
     ports:
-      - "8083:3000"
+      - "8018:3000"
