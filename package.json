@@ -31,10 +31,10 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,json}": [
-      "eslint"
+      "eslint --fix"
     ],
     "*.{js,jsx,ts,tsx,css,md,json}": [
-      "prettier --check"
+      "prettier --write"
     ]
   },
   "eslintConfig": {
