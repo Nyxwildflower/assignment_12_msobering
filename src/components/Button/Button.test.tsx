@@ -16,9 +16,25 @@ describe("Button Component", () => {
       label="Click Me"
     />,
   );
-  const button = screen.getAllByText("Click Me")[0];
+
+  render(
+    <Button
+      disabled
+      onClick={() => {
+        console.log("Button Pressed");
+      }}
+      label="Don't Click Me"
+    />,
+  );
+
+  const defaultButton = screen.getByText("Click Me");
+  const disabledButton = screen.getByText("Don't Click Me");
 
   test("Button is visible", () => {
-    expect(button).toBeInTheDocument();
+    expect(defaultButton).not.toHaveStyle("display: none;");
+  });
+
+  test("Disabled button is grey", () => {
+    expect(disabledButton).toHaveStyle("background-color: #999;");
   });
 });
