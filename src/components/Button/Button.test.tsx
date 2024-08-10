@@ -31,7 +31,7 @@ describe("Button Component", () => {
   const disabledButton = screen.getByText("Don't Click Me");
 
   test("Button is visible", () => {
-    expect(defaultButton).not.toHaveStyle("display: none;");
+    expect(defaultButton).toBeVisible();
   });
 
   test("Disabled button is grey", () => {
