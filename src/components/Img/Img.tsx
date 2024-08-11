@@ -6,8 +6,8 @@ const StyledImg = styled.img<{
   $maxHeight?: string;
   $maxWidth?: string;
 }>`
-  max-height: ${(props) => (props.$maxHeight ? props.$maxHeight : "auto")}
-  max-width: ${(props) => (props.$maxWidth ? props.$maxWidth : "100vw")}
+  max-height: ${(props) => (props.$maxHeight ? props.$maxHeight : "auto")};
+  max-width: ${(props) => (props.$maxWidth ? props.$maxWidth : "100vw")};
 `;
 
 const Img = (props: ImgProps) => {
