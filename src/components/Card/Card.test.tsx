@@ -17,7 +17,7 @@ describe("Card Component", () => {
     />,
   );
 
-  const defaultCard = screen.getByText("test").parentElement;
+  const defaultCard = screen.getByText("test");
 
   test("Card is visible", () => {
     expect(defaultCard).toBeVisible();

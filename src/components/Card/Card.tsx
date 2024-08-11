@@ -10,7 +10,6 @@ const StyledCard = styled.div<{
   width: ${(props) => props.$size};
   background-color: ${(props) => props.$backgroundColor};
   padding: 10px 20px;
-  font-family: sans-serif;
 `;
 
 const StyledTitle = styled.h1`
@@ -24,7 +23,6 @@ const StyledSubtitle = styled.h2`
 `;
 
 const StyledContent = styled.p`
-  font-family: sans-serif;
   font-size: 1em;
 `;
 
