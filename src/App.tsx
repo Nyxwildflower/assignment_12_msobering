@@ -6,6 +6,7 @@ import Dropdown from "./components/Dropdown/Dropdown";
 import HeroImage from "./components/HeroImage/HeroImage";
 import Img from "./components/Img/Img";
 import Label from "./components/Label/Label";
+import Text from "./components/Text/Text";
 
 function App() {
   return (
@@ -23,7 +24,10 @@ function App() {
         fontSize="5em"
         fontColor="#FFF"
       />
-      <Label label="Label without background" fontSize="2em" fontColor="#FFF" />
+      <div style={{ backgroundColor: "#D3D9D4" }}>
+        <Label label="Label without background" fontSize="2em" />
+        <Text label="This is an extended amount of text." fontSize="1.5em" />
+      </div>
       <div style={{ display: "flex", justifyContent: "space-between" }}>
         <Card
           backgroundColor={"#D3D9D4"}
