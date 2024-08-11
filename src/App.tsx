@@ -5,6 +5,7 @@ import Card from "./components/Card/Card";
 import Dropdown from "./components/Dropdown/Dropdown";
 import HeroImage from "./components/HeroImage/HeroImage";
 import Img from "./components/Img/Img";
+import Label from "./components/Label/Label";
 
 function App() {
   return (
@@ -16,6 +17,13 @@ function App() {
         }}
         label="Click Me"
       />
+      <Label
+        label="Announcement!"
+        backgroundColor="#2E3944"
+        fontSize="5em"
+        fontColor="#FFF"
+      />
+      <Label label="Label without background" fontSize="2em" fontColor="#FFF" />
       <div style={{ display: "flex", justifyContent: "space-between" }}>
         <Card
           backgroundColor={"#D3D9D4"}

@@ -3,3 +3,4 @@ export { default as Card } from "./Card";
 export { default as Dropdown } from "./Dropdown";
 export { default as HeroImage } from "./HeroImage";
 export { default as Img } from "./Img";
+export { default as Label } from "./Label";
